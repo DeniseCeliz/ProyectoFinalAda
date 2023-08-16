@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.caja {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.imagenTarjeta {
+    overflow: hidden;
+}
+
+.imagen {
+    border-radius: 10px 10px 0px 0px;
+    transition: filter, 0.4s;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+    width: 100%;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 5px -3px #60937db3;
+    overflow: hidden;
+    transition: box-shadow, 0.4s;
+
+}
+
+
+
+.contenidoTarjeta {
+    margin: 15px;
+    font-size: 14.5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 2px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.vermas {
+    margin: 10px;
+    color: orange;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    border-style: solid;
+
+
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 70px;
+    justify-content: space-between
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.filtros {
+    display: flex;
+    margin-right: 10px;
+
+
+}
+
+.botonfiltro {
+    border-style: none;
+    border-color: white;
+    padding: 5px 5px 5px 5px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    margin: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+
+}
+
+.total {
+    margin: 15px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pie {
+    background-color: black;
+    color: white;
+    height: 150px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+
+.paginas {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.botonInicio {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botonInicio:hover {
+    box-shadow: 7px 7px 7px 0px #000100;
+}
+
+.botonSiguiente {
+    padding: 15px 15px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botonSiguiente:hover {
+    box-shadow: 7px 7px 7px 0px #000100;
+}
+
+.botonAnterior {
+    padding: 15px 15px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botonAnterior:hover {
+    box-shadow: 7px 7px 7px 0px #000100;
+}
+
+.botonFinal {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botonFinal:hover {
+    box-shadow: 7px 7px 7px 0px #000100;
+
+}
+
+.ingrese{
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ingrese:hover{
+    box-shadow: 7px 7px 7px 0px #000100;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .botonfiltro {
+        font-size: 12px;
+
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .botonfiltro {
+        display: none;
+
+    }
+
+    .caja {
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+
+    .logo {
+        margin-left: 35%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .botonfiltro {
+        display: none;
+
+    }
+
+    .caja {
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+}
+
+
+/* Animaciones */
+
+.imagen:hover {
+    filter: grayscale(100%);
+    --escala: 1.2;
+    cursor: pointer;
+
+
+}
+
+.tarjeta:hover {
+    box-shadow: 19px 19px 17px 0px #60937db3;
+    cursor: pointer;
+
+}

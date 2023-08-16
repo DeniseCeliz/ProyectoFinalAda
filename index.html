@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rick and Morty</title>
+</head>
+
+<body class="body">
+    <div class="encabezado">
+        <img class="logo" src="./Rick-And-Morty-Logo-Transparent-File.png">
+        <div class="filtros">
+            <button class="botonfiltro" id="todos">Todos</button>
+            <button class="botonfiltro" id="mujeres">Mujeres</button>
+            <button class="botonfiltro" id="hombres">Hombres</button>
+            <button class="botonfiltro" id="desconocido">Desconocido</button>
+            <button class="botonfiltro" id="singenero">Sin género</button>
+        </div>
+    </div>
+    <p class="total">Total de Personajes: <span id="totalPersonajes"></span></p>
+    <div class="caja" id="tarjeta">
+        <!-- <img src="" alt="">
+<div class="contenidoTarjeta">
+    <p>Nombre</p>
+    <p>Género</p>
+    <p>Especies</p>
+    <p>Estado</p>
+    <p>Origen</p>
+    <p>Locación</p>
+</div> -->
+    </div>
+
+    <div class="paginas">
+        <p>Página actual: <span id="paginaActual"></span></p>
+        <p>Total de páginas: 42 </p>
+        <button class="ingrese" onclick="apretar()">Ir a Página...</button>
+    </div>
+
+    <div class="botones">
+        <button class="botonInicio" id="inicio"><<</button>
+        <button class="botonAnterior" id="anterior"><</button>
+        <button class="botonSiguiente" id="siguiente">></button>
+        <button class="botonFinal" id="final">>></button>
+    </div>
+
+    <footer class="pie">
+        <img class="imagenpie" src="./ada-logo-fucsia.png" height=60px>
+        <div class="contenidopie">
+            <p>Introducción a la Programación Frontend - Proyecto Final</p>
+            <p>Autor: Denise Celiz</p>
+            <p>Mail: denise.celiz@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
